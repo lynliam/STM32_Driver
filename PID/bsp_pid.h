@@ -23,6 +23,7 @@ typedef struct{
 //    float output;										//输出值
     float outputMax;									//最大输出值的绝对值
     //float outputMin;                                  //最小输出值的绝对值用于防抖
+    
 }_PID_t;
 
 
