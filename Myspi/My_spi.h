@@ -32,7 +32,7 @@
 #define  SPI_FLASH_WP_LOW()    HAL_GPIO_WritePin(SPI_CS_PORT, SPI_CS_PIN,GPIO_PIN_RESET)  //PC4
 #define  SPI_FLASH_WP_HIGH()   HAL_GPIO_WritePin(SPI_CS_PORT, SPI_CS_PIN, GPIO_PIN_SET)    //PC4
 
-void gd25qxxSendByte(uint8_t byte);
+void SendandReceiveByte(uint8_t byte);
 void SPI_PIN_Init(void);
 void SPI_SendByte(uint8_t byte);
 

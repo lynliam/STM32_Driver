@@ -67,8 +67,8 @@ void Delay_ms_(uint32_t nms)
 void Delay_us(uint32_t nus)
 {
     uint16_t counter = 0;
-            __HAL_TIM_SetAutoreload(&htim13, nus);		//设置定时器自动加载值
-            __HAL_TIM_SetCounter(&htim13, counter); 		//设置定时器初始值
+    __HAL_TIM_SetAutoreload(&htim13, nus);		//设置定时器自动加载值
+    __HAL_TIM_SetCounter(&htim13, counter); 		//设置定时器初始值
     HAL_TIM_Base_Start(&htim13); 				//启动定时器
 
     while(counter != nus) //直到定时器计数从0计数到us结束循环,刚好是所需要的时间
